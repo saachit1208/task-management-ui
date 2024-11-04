@@ -90,13 +90,10 @@ The UI connects to a Flask backend API with the following endpoints:
 ### TaskList
 - Main component that displays all tasks
 - Handles task fetching and deletion
-- Shows loading and error states
 
 ### TaskForm
 - Handles task creation
 - Input validation
-- Loading state during submission
-- Success/error feedback
 
 ### TaskItem
 - Displays individual task information
@@ -108,12 +105,6 @@ The UI connects to a Flask backend API with the following endpoints:
  VITE_API_URL 
  http://127.0.0.1:5000/api 
 
-## Development
-
-1. Make sure the backend API is running
-2. Start the development server
-3. Make changes in the `src` directory
-4. The app will hot-reload as you make changes
 
 ## Error Handling
 
@@ -126,10 +117,6 @@ The application handles various error cases:
 ## Style Guide
 
 - Uses Tailwind CSS for styling
-- Responsive design principles
-- Consistent spacing and colors
-- Loading states for better UX
-- Error and success messages
 
 ## Requirements
 
@@ -137,14 +124,7 @@ The application handles various error cases:
 - npm or yarn
 - Modern web browser
 - Backend API running on http://127.0.0.1:5000
-
-## Contributing
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
-
+- 
 ## Notes
 
 - Ensure the backend API is running before starting the UI
