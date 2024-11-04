@@ -105,27 +105,8 @@ The UI connects to a Flask backend API with the following endpoints:
 
 ## Environment Variables
 
-|
- Variable 
-|
- Description 
-|
- Default 
-|
-|
-----------
-|
--------------
-|
----------
-|
-|
  VITE_API_URL 
-|
- Backend API URL 
-|
  http://127.0.0.1:5000/api 
-|
 
 ## Development
 
