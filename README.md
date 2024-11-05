@@ -43,13 +43,35 @@ Create a `.env` file in the root directory:
 VITE_API_URL=http://127.0.0.1:5000/api
 ```
 
-3. **Install Tailwind CSS**
+3. **Install and Configure Tailwind CSS**
 ```bash
-# Install Tailwind CSS
+# Install Tailwind CSS and its peer dependencies
 npm install -D tailwindcss postcss autoprefixer
 
-# Initialize Tailwind CSS
+# Generate Tailwind CSS configuration file
 npx tailwindcss init -p
+```
+
+Update `tailwind.config.js`:
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Add Tailwind directives to `src/index.css`:
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 4. **Start Development Server**
